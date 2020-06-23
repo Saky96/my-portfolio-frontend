@@ -31,13 +31,16 @@ export const query = graphql`
 
 const ProjectsPage = ({
   data: {
-    allStrapiProjects: { nodes: projects },
-  },
+    allStrapiProjects: { nodes: projects }
+  }
 }) => {
   return (
     <Layout>
-      <section className="projects-page">
-        <Projects projects={projects} title="all projects" />
+      <section className="projects-page" >
+        <Projects
+          projects={projects}
+          title="all projects"
+        />
       </section>
     </Layout>
   )
